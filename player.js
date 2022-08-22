@@ -27,3 +27,18 @@ function display(selectPlayers) {
     }
 
 }
+function addToPlayer(element) {
+    const playersName = element.parentNode.parentNode.children[0].innerText;
+    // console.log(pdName);
+    element.disabled = true;
+    const playerObject = {
+        playersName: playersName,
+
+    }
+
+    array.push(playerObject);
+    // console.log(array);
+    // console.log(array.length);
+    document.getElementById('total-added-players').innerText = array.length;
+    display(array);
+}
