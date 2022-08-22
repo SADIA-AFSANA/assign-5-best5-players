@@ -99,3 +99,50 @@
                 </div>
             </div>
             <div>
+                <p class="text-4xl text-center">Selected - V <span id="total-added-players"
+                        class="text-blue-500">0</span>
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="table table-zebra w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>Number</th>
+
+                                <th>Name</th>
+                            </tr>
+                        </thead>
+                        <tbody id="players-list">
+                            <!-- <tr>
+                            <th>1</th>
+                            <td>robert</td>
+
+                        </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="px-5">
+                    <h3 class="text-5xl font-semibold text-orange-600 text-center mt-6 ">Budget</h3>
+                    <div class="mt-4"><span class="">Per Player</span>
+                        <input type="text" name="" id="per-player-input">
+                    </div>
+                    <div><button id="calculate-btn" class="btn btn-primary justify-center px-7 mt-4">Calculate</button>
+                    </div>
+                    <h4>Player Expenses : $<span id="player-Expenses">0</span></h4>
+                    <span>Manager
+                    </span>
+                    <input class="mt-4" type="text" name="" id="manager-input"><br>
+                    <span>Coach</span>
+                    <input class="mt-4" type="text" name="" id="coach-input"><br>
+                    <div><button id="calculate-total-btn" class="btn btn-primary justify-center px-7 mt-4">Calculate
+                            Total</button></div>
+                    <h2>total : $<span id="final-total">0</span></h2>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="player.js"></script>
+</body>
+
+</html>
